@@ -27,11 +27,8 @@ export namespace draco::math {
         [[nodiscard]] constexpr const f32& operator[](i32 i) const noexcept;
 
         // swizzle
-        [[nodiscard]] constexpr Vector2 operator[](i32 i0, i32 i1) noexcept;
         [[nodiscard]] constexpr Vector2 operator[](i32 i0, i32 i1) const noexcept;
-        [[nodiscard]] constexpr Vector3 operator[](i32 i0, i32 i1, i32 i2) noexcept;
         [[nodiscard]] constexpr Vector3 operator[](i32 i0, i32 i1, i32 i2) const noexcept;
-        [[nodiscard]] constexpr Vector4 operator[](i32 i0, i32 i1, i32 i2, i32 i3) noexcept;
         [[nodiscard]] constexpr Vector4 operator[](i32 i0, i32 i1, i32 i2, i32 i3) const noexcept;
 
         // operators
@@ -72,11 +69,8 @@ export namespace draco::math {
         [[nodiscard]] constexpr const f32& operator[](i32 i) const noexcept;
 
         // swizzle
-        [[nodiscard]] constexpr Vector2 operator[](i32 i0, i32 i1) noexcept;
         [[nodiscard]] constexpr Vector2 operator[](i32 i0, i32 i1) const noexcept;
-        [[nodiscard]] constexpr Vector3 operator[](i32 i0, i32 i1, i32 i2) noexcept;
         [[nodiscard]] constexpr Vector3 operator[](i32 i0, i32 i1, i32 i2) const noexcept;
-        [[nodiscard]] constexpr Vector4 operator[](i32 i0, i32 i1, i32 i2, i32 i3) noexcept;
         [[nodiscard]] constexpr Vector4 operator[](i32 i0, i32 i1, i32 i2, i32 i3) const noexcept;
 
         // operators
@@ -120,11 +114,8 @@ export namespace draco::math {
         [[nodiscard]] constexpr const f32& operator[](i32 i) const noexcept;
 
         // swizzle
-        [[nodiscard]] constexpr Vector2 operator[](i32 i0, i32 i1) noexcept;
         [[nodiscard]] constexpr Vector2 operator[](i32 i0, i32 i1) const noexcept;
-        [[nodiscard]] constexpr Vector3 operator[](i32 i0, i32 i1, i32 i2) noexcept;
         [[nodiscard]] constexpr Vector3 operator[](i32 i0, i32 i1, i32 i2) const noexcept;
-        [[nodiscard]] constexpr Vector4 operator[](i32 i0, i32 i1, i32 i2, i32 i3) noexcept;
         [[nodiscard]] constexpr Vector4 operator[](i32 i0, i32 i1, i32 i2, i32 i3) const noexcept;
 
         // member operators

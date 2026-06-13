@@ -70,14 +70,6 @@ export namespace draco::math {
     }
 
     // swizzle
-    [[nodiscard]] constexpr Vector2 Vector2::operator[](const i32 i0, const i32 i1) noexcept {
-        if consteval {
-            return { select(i0, x, y), select(i1, x, y) };
-        } else {
-            return { (&x)[i0], (&x)[i1] };
-        }
-    }
-
     [[nodiscard]] constexpr Vector2 Vector2::operator[](const i32 i0, const i32 i1) const noexcept {
         if consteval {
             return { select(i0, x, y), select(i1, x, y) };
@@ -86,27 +78,11 @@ export namespace draco::math {
         }
     }
 
-    [[nodiscard]] constexpr Vector3 Vector2::operator[](const i32 i0, const i32 i1, const i32 i2) noexcept {
-        if consteval {
-            return { select(i0, x, y), select(i1, x, y), select(i2, x, y) };
-        } else {
-            return { (&x)[i0], (&x)[i1], (&x)[i2] };
-        }
-    }
-
     [[nodiscard]] constexpr Vector3 Vector2::operator[](const i32 i0, const i32 i1, const i32 i2) const noexcept {
         if consteval {
             return { select(i0, x, y), select(i1, x, y), select(i2, x, y) };
         } else {
             return { (&x)[i0], (&x)[i1], (&x)[i2] };
-        }
-    }
-
-    [[nodiscard]] constexpr Vector4 Vector2::operator[](const i32 i0, const i32 i1, const i32 i2, const i32 i3) noexcept {
-        if consteval {
-            return { select(i0, x, y), select(i1, x, y), select(i2, x, y), select(i3, x, y) };
-        } else {
-            return { (&x)[i0], (&x)[i1], (&x)[i2], (&x)[i3] };
         }
     }
 
