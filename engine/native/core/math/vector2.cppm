@@ -1,15 +1,7 @@
 module;
 
 #include <cmath>
-#include <algorithm>
 #include <format>
-#include "platform/simd.h"
-
-#if ARCH_X64
-    #include <immintrin.h>
-#elif ARCH_ARM64
-    #include <arm_neon.h>
-#endif
 
 export module core.math.types:vector2;
 export import :common;

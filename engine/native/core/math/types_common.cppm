@@ -1,6 +1,5 @@
 export module core.math.types:common;
 import core.defs;
-import core.stdtypes;
 
 export namespace draco::math {
 	struct Vector2;
