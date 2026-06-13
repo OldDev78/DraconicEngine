@@ -74,25 +74,13 @@ export namespace draco::math {
     // element access
     [[nodiscard]] constexpr f32& Vector4::operator[](const i32 i) noexcept {
         if consteval {
-            switch (i) {
-                case 0: return x;
-                case 1: return y;
-                case 2: return z;
-                default:
-                case 3: return w;
-            }
+            return select(i, x, y, z, w);
         } else { return (&x)[i]; }
     }
 
     [[nodiscard]] constexpr const f32& Vector4::operator[](const i32 i) const noexcept {
         if consteval {
-            switch (i) {
-                case 0: return x;
-                case 1: return y;
-                case 2: return z;
-                default:
-                case 3: return w;
-            }
+            return select(i, x, y, z, w);
         } else { return (&x)[i]; }
     }
 

@@ -55,7 +55,7 @@ export namespace draco::math {
     // element access
     [[nodiscard]] constexpr f32& Vector2::operator[](const i32 i) noexcept {
         if consteval {
-            return i ? y : x;
+            return select(i, x, y);
         } else {
             return (&x)[i];
         }
@@ -63,7 +63,7 @@ export namespace draco::math {
 
     [[nodiscard]] constexpr const f32& Vector2::operator[](const i32 i) const noexcept {
         if consteval {
-            return i ? y : x;
+            return select(i, x, y);
         } else {
             return (&x)[i];
         }
